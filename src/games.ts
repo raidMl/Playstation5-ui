@@ -1,6 +1,32 @@
 import {Game} from "./types/game.ts";
 
 export const games: Game[] = [
+
+    {
+        logo: '/games/fifa.jpg',
+        name: 'Fifa',
+        bg: '/games/fifa_bg.jpg'
+    },
+    {
+        logo: '/games/need-for-speed.jpg',
+        name: 'Need for speed',
+        bg: '/games/need-for-speed_bg.jpg'
+    },
+    {
+        logo: '/games/gta.jpg',
+        name: 'GTA',
+        bg: '/games/gta_bg.jpg'
+    },
+    {
+        logo: '/games/call-of-duty.jpg',
+        name: 'Call of duty',
+        bg: '/games/call-of-duty_bg.jpg'
+    },
+    {
+        logo: '/games/downhill.jpg',
+        name: 'Downhill',
+        bg: '/games/downhill_bg.jpg'
+    },
     {
         logo: '/games/fortnite.jpeg',
         name: 'Fortnite',

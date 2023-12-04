@@ -16,7 +16,7 @@ export const GameCard = forwardRef(
 
         
         
-       <div className="game-card-img"> <img src={logo} alt={name}  className=""/></div>
+       <div className="game-card-img"> <img src={logo} alt={name}  className="myimg"/></div>
      </div>
     )
 });
