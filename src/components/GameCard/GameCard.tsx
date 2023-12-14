@@ -1,5 +1,5 @@
 import { HtmlHTMLAttributes } from "react";
-import { Game } from "../types/game";
+import { Game } from "../../types/game";
 import './GameCard.scss'
 import {ForwardedRef, forwardRef, HTMLAttributes} from 'react';
 

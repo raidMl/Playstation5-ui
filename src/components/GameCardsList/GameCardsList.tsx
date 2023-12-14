@@ -1,6 +1,6 @@
 import { GameCard } from "../GameCard/GameCard";
-import { CARDS_OFFSET_X, CARD_GAP, CARD_SIZE,CARDS_OFFSET_y, ACTIVE_CARD_GAP, ACTIVE_CARD_SIZE } from "../constants";
-import { Game } from "../types/game";
+import { CARDS_OFFSET_X, CARD_GAP, CARD_SIZE,CARDS_OFFSET_y, ACTIVE_CARD_GAP, ACTIVE_CARD_SIZE } from "../../constants";
+import { Game } from "../../types/game";
 import {useMemo} from 'react'
 interface GameCardsListProps{
     games:Game[];

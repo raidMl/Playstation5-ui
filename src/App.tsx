@@ -3,8 +3,9 @@ import { useState,useEffect } from 'react'
 // import viteLogo from '/vite.svg'
  import './App.scss'
  import {ACTIVE_CARD_GAP, ACTIVE_CARD_SIZE, CARD_SIZE, CARDS_OFFSET_X, CARDS_OFFSET_y} from "./constants.ts";
- import { GameCardsList } from './GameCardsList/GameCardsList'
+ import { GameCardsList } from './components/GameCardsList/GameCardsList.tsx'
 import { games } from './games'
+import Navbar from './components/navbar/navbar.tsx';
 import { CrossFader } from 'react-cross-fader'
 import { usePrevious } from './hooks/use-previous'
 import {Howl} from 'howler';
@@ -51,7 +52,9 @@ const navigate = (index: number) => {
 // const textOffsetY = ACTIVE_CARD_SIZE * 0.78 + CARDS_OFFSET_y;
 const isNext = ActiveIndex > (previousActiveIndex ?? 0);
   return (
+    <>
     <div className='ps5-container' style={
+      
       {
           ['--active-card-size']: `${ACTIVE_CARD_SIZE}px`,
           ['--card-size']: `${CARD_SIZE}px`,
@@ -59,9 +62,11 @@ const isNext = ActiveIndex > (previousActiveIndex ?? 0);
   }>
                <CrossFader destroyOnFadeOutComplete={false} className={'game-bg-container ' + (isNext ? 'next' : 'prev')}>
                 <div className='game-bg' style={{backgroundImage: `url("${games[ActiveIndex].bg ?? games[ActiveIndex].logo}")`}}>
+
                 </div>
             </CrossFader>
-    
+            <Navbar/>
+
       <div className='games-list-container'>
                 <GameCardsList games={games} activeIndex={ActiveIndex} onActiveIndexChange={navigate}/>
             </div>
@@ -69,7 +74,7 @@ const isNext = ActiveIndex > (previousActiveIndex ?? 0);
             
     
       
-      </div>
+      </div></>
     );
 }
 
