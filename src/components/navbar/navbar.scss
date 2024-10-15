@@ -9,11 +9,15 @@
     display: flex;flex-direction: row; justify-content: space-around;
    
    
-    li{ list-style: none; cursor: pointer;     padding: 10px;border-radius:15px;
+    li{ list-style: none; cursor: pointer;    ; padding: 10px;border-radius:15px;
         font-size: 20px;font-weight: bold;text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.712);
+        user-select: none;
+
 font-family: 'Times New Roman', Times, serif;
    img{border-radius:50%;border:  2px solid rgba(0, 0, 0, 0.116)}
    img:hover{border-color: rgba(21, 99, 172, 0.664)}
 }
-    .item:hover{background-color: rgba(21, 99, 172, 0.541);}
+    .item:hover{background-color: rgba(21, 99, 172, 0.541);
+    
+    }
 }

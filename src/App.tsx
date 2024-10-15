@@ -2,7 +2,7 @@ import { useState,useEffect } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
  import './App.scss'
- import {ACTIVE_CARD_GAP, ACTIVE_CARD_SIZE, CARD_SIZE, CARDS_OFFSET_X, CARDS_OFFSET_y} from "./constants.ts";
+ import { ACTIVE_CARD_SIZE, CARD_SIZE } from "./constants.ts";
  import { GameCardsList } from './components/GameCardsList/GameCardsList.tsx'
 import { games } from './games'
 import Navbar from './components/navbar/navbar.tsx';

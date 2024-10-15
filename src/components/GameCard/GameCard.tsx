@@ -1,7 +1,7 @@
 import { HtmlHTMLAttributes } from "react";
 import { Game } from "../../types/game";
 import './GameCard.scss'
-import {ForwardedRef, forwardRef, HTMLAttributes} from 'react';
+import {ForwardedRef, forwardRef} from 'react';
 
 
 interface GameCardProps extends HtmlHTMLAttributes<HTMLDivElement>,Pick<Game, 'name'| 'logo'>{
